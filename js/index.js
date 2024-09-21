@@ -41,9 +41,9 @@ document.getElementById("calculate-btn").addEventListener("click",function(){
     div.innerHTML= `      
           <p > Serial Number ${count} </p>
           <p class="text-xs text-gray-500">${new Date().toLocaleDateString()}</p>
-           <p class="text-xs text-gray-500">$${income_N.toFixed(2)}</p>
-            <p class="text-xs text-gray-500">$${total_expenses.toFixed(2)}</p>
-            <p class="text-xs text-gray-500">$${balance.toFixed(2)}</p>
+           <p class="text-xs text-gray-500">Income: $${income_N.toFixed(2)}</p>
+            <p class="text-xs text-gray-500">Total Expenses: $${total_expenses.toFixed(2)}</p>
+            <p class="text-xs text-gray-500">Remaining Balances: $${balance.toFixed(2)}</p>
 
     
     `
