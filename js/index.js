@@ -118,6 +118,9 @@ document.getElementById("sav-btn").addEventListener("click",function(){
 
 document.getElementById("assistant tab").addEventListener("click",function(){
 
+    document.getElementById("assistant tab").classList.add("bg-primary")
+    document.getElementById("history-tab").classList.remove("bg-primary")
+
 
     document.getElementById("assistance-section").classList.remove("hidden")
     document.getElementById("history-section").classList.add("hidden")
@@ -125,6 +128,8 @@ document.getElementById("assistant tab").addEventListener("click",function(){
 
 document.getElementById("history-tab").addEventListener("click",function(){
 
+    document.getElementById("assistant tab").classList.remove("bg-primary")
+    document.getElementById("history-tab").classList.add("bg-primary")
 
     document.getElementById("assistance-section").classList.add("hidden")
     document.getElementById("history-section").classList.remove("hidden")
