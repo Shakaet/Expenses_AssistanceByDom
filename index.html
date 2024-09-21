@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dom</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <main class="flex justify-center">
+        <div class="card bg-base-100  shadow-xl p-3">
+
+            <h2 class="text-center text-primary text-3xl">Programmer Expenses Assistant</h2>
+            <div class="flex gap-2 mt-5">
+                <button id="assistant tab" class="btn btn-wide hover:bg-sky-700">Assistant</button>
+                <button id="history-tab" class="btn btn-wide hover:bg-sky-700">History</button>
+            </div>
+
+            <div id="assistance-section">
+                <div class="mt-7">
+                    <label class="form-control">
+                        <div class="label">
+                          <span class="label-text">Income</span>
+                        
+                        </div>
+                        <input id="income-text" type="text" placeholder="Type here" class="input input-bordered m-1" />
+                        <div class="label">
+                          
+                        </div>
+                      </label>
+
+                      <div class="flex gap-5">
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text">Software</span>
+                    
+                            </div>
+                            <input id="software-text" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            <div class="label">
+                            
+                            </div>
+                          </label>
+
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text">Courses</span>
+                            
+                            </div>
+                            <input id="courses-text" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            <div class="label">
+                              
+                            </div>
+                          </label>
+                      </div>
+
+                      <label class="form-control">
+                        <div class="label">
+                          <span class="label-text">Internet</span>
+                          
+                        </div>
+                        <input id="Internet-text" type="text" placeholder="Type here" class="input input-bordered w-1/2" />
+                        <div class="label">
+                         
+                        </div>
+                      </label>
+
+
+                      <button id="calculate-btn" class="btn btn-wide w-full btn-primary">Calculate</button>
+
+                      <label class="form-control"></label>
+                        <div class="label">
+                          <span class="label-text">Savings (%)</span>
+                          
+                        </div>
+                        <input id="sav-text" type="text" placeholder="Type here" class="input input-bordered w-1/2" />
+                        <div class="label">
+                         
+                        </div>
+                      </label>
+
+                      <button id="sav-btn" class="btn btn-wide w-full btn-warning">Calculate Savings</button>
+
+
+          
+
+                    
+                    </div>
+
+                    <div id="results-summery" class="hidden card bg-base-100  shadow-xl p-3 mt-3">
+
+                        <h2 class="text-center">Results Summery</h2>
+
+                        <div class=" grid grid-cols-2 gap-x-24 gap-y-5 ms-10 mt-10">
+                            <div>
+                                <h3>Total Expenses</h3>
+                                <p>$<span id="t-ex">0.00</span></p>
+                            </div>
+
+                            <div>
+                                <h3>Balance</h3>
+                                <p>$<span id="bal">0.00</span></p>
+                            </div>
+                               
+
+                                <div>
+                                    <h3>Savings Amount</h3>
+                                    <p>$<span id="save">0.00</span></p>
+                                </div>
+    
+                                <div>
+                                    <h3>Remaining Balance</h3>
+                                    <p>$<span id="rem_bal">0.00</span></p>
+                                </div>
+                                   
+                                </div>
+                        </div>
+
+                        </div>
+
+
+                        <div id="history-section" class="hidden">
+
+                            <div id="results-summery" class="card bg-base-100  shadow-xl p-3 mt-3">
+
+                                <h2 class="text-center">Results Summery</h2>
+        
+                                <div class=" grid grid-cols-2 gap-x-24 gap-y-5 ms-10 mt-10">
+                                    <div>
+                                        <h3>Total Expenses</h3>
+                                        <p>$<span id="t-ex-h">0.00</span></p>
+                                    </div>
+        
+                                    <div>
+                                        <h3>Balance</h3>
+                                        <p>$<span id="bal-h">0.00</span></p>
+                                    </div>
+                                       
+        
+                                        <div>
+                                            <h3>Savings Amount</h3>
+                                            <p>$<span id="save-h">0.00</span></p>
+                                        </div>
+            
+                                        <div>
+                                            <h3>Remaining Balance</h3>
+                                            <p>$<span id="rem_bal-h">0.00</span></p>
+                                        </div>
+                                           
+                                        </div>
+                                </div>
+
+                                
+
+                                <div class="card bg-base-100  shadow-xl p-3 mt-3">
+
+                                    <h2 class="text-center">Expenses History</h2>
+
+
+                                    <div id="Expenses-history" class="grid grid-cols-2">
+
+                                    </div>
+
+                                    
+
+
+
+                                   
+            
+                                    
+                                    </div>
+
+
+
+                        </div>
+
+                      </div>
+            </div>
+
+
+            
+           
+            
+          </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
